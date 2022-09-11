@@ -1,0 +1,182 @@
+<html>
+<head>
+    <style>
+       @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: 2px;;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+header
+{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  padding:40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+header .head{
+  color: rgb(12, 208, 243);
+  text-transform: uppercase;
+}
+
+
+.main
+{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(160, 13, 13, 0);
+  transition: 0.5s;
+  z-index: 2;
+}
+
+
+.main video
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+.overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0d86bee5;
+  mix-blend-mode: overlay;
+}
+.text
+{
+  position:absolute;
+  z-index: 10;
+}
+
+.text h2
+{
+  font-size: 5em;
+  font-weight: 500;
+  color: rgb(249, 248, 250);
+  line-height: 1em;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.text h3
+{
+  font-size: 4em;
+  font-weight: 300;
+  color: rgb(248, 248, 250);
+  line-height: 1em;
+  text-transform: uppercase;
+  margin-top: 7px;
+}
+.text p
+{
+  font-size: 1.1em;
+  color: #fff;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+  margin-top: 30px;
+}
+.text a
+{
+  display: inline-block;
+  font-size: 1.2em;
+  background: rgba(246, 244, 247, 0.993);
+  padding: 5px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 510;
+  margin-top: 50px;
+  color: rgb(22, 206, 83);
+  letter-spacing: 2.1px;
+  transition: 0.4s;
+}
+.text a:hover
+{
+  letter-spacing: 6px;
+}
+.social
+{
+  position: absolute;
+  z-index: 10;
+  bottom: 5px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.social li
+{
+  list-style: none;
+}
+.social li a
+{
+  display: inline-block;
+  margin-right: 20px;
+  filter: invert(1);
+  transform: scale(0.5);
+  transition: 0.5s;
+}
+.social li a:hover
+{
+  transform: scale(0.8)  translateY(-5px);
+}
+
+@media (max-width: 990px)
+{
+  .showcase,
+  .showcase header
+  {
+    padding: 40px;
+  }
+  .text h2
+  {
+    font-size: 3em;
+  }
+  .text h3
+  {
+    font-size: 2em;
+  }
+
+  </style>
+    <body>
+  <div class="main">
+    <header>
+      <h2 class="head">BANGER</h2>
+     
+    </header>
+    <video src="rolex.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Never Stop To </h2> 
+      <h3>Exploring The World</h3>
+      <p>“Attitude is a choice. Happiness is a choice. Optimism is a choice. Kindness is a choice. Giving is a choice. Respect is a choice. Whatever choice you make makes you. Choose wisely.”.</p>
+      <a href="https://timesofindia.indiatimes.com/readersblog/thereality/importance-of-having-a-positive-attitude-in-life-24763/">Explore</a>
+    </div>
+    <ul class="social">
+        <li><a href="https://twitter.com/ROLEX_SIR__?t=1rEeZG708jep7PpOvzplYQ&s=08"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+        <li><a href="https://www.instagram.com/yashwanth6400/"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+    </ul>
+</div>
+
+    </body>
+  </head>
+  </html>
